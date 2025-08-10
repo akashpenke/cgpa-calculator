@@ -24,5 +24,9 @@ document.getElementById('cgpaForm').addEventListener('submit', function(event) {
   }
 
   const cgpa = weightedSum / totalCredits;
-  document.getElementById('result').innerText = `CGPA YOU GOT IS: ${cgpa.toFixed(2)}`;
+  const resultDiv = document.getElementById('result');
+  resultDiv.innerText = `CGPA YOU GOT IS: ${cgpa.toFixed(2)}`;
+  
+  // Add animation
+  resultDiv.classList.add('show');
 });
